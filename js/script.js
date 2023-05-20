@@ -23,5 +23,21 @@ $(document).ready(function ($) {
 
 $(".hamburger").click(function (e) {
     e.preventDefault();
-    $("#wrapper").toggleClass("active");
+    $(".sidebar").toggleClass("expanded");
+    $(".main-content").toggleClass("sidebar-expanded");
+});
+
+(() => {
+    'use strict'
+    const tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    tooltipTriggerList.forEach(tooltipTriggerEl => {
+        new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+})()
+
+var tableRow = document.getElementById('clickable-row');
+
+// Add a click event listener to the table row
+tableRow.addEventListener('click', function () {
+    window.location.href = '#';
 });
