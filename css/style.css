@@ -4,7 +4,7 @@
 
 /*===============================LOGOS-----------------------------------------------------*/
 header {
-    width: vw;
+    width: 100vw;
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -33,39 +33,51 @@ header {
 }
 
 /*===============================NAVBAR-----------------------------------------------------*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 #wrapper {
     margin-top: 50px;
-    width: 100%;
-    transition: margin-left .5s;
+    lex-grow: 1;
+    min-height: 100vh;
+    display: flex;
 }
 
 #wrapper.active {
     margin-left: -300px;
 }
 
-
+.my-container {
+    display: flex;
+}
 
 .main-content {
     margin-left: 88px;
     transition: margin-left 0.6s ease;
 }
 
-.main-content.sidebar-expanded {
-    margin-left: 290px;
-}
-
 .sidebar-menu .sidebar {
-    position: fixed;
+    position: relative;
     width: 88px;
     height: 100%;
     background-color: #fff;
     border-right: 1px solid #ccc;
     transition: width 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bar-text {
     display: none;
     transition: display 0.6s ease;
+}
+
+.main-content.sidebar-expanded {
+    margin-left: 290px;
 }
 
 .sidebar.expanded .bar-text {
@@ -98,8 +110,7 @@ header {
 }
 
 .sidebar-menu .sidebar .hamburger .side-btn-hem {
-    margin-right: 27px;
-    font-size: 14px;
+    font-size: 23px;
     color: #666;
     cursor: pointer;
 
@@ -115,6 +126,10 @@ header {
     padding: 14px 27px;
     margin-top: 15px;
     border: 3px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline-start: 0px;
 }
 
 .sidebar-menu .sidebar .ul-sidebar .close-it:hover {
@@ -125,10 +140,6 @@ header {
     -webkit-transition: 0.4s all ease-in-out;
 }
 
-.sidebar-menu .sidebar .ul-sidebar .close-it:hover a {
-    color: #000;
-}
-
 .sidebar-menu .sidebar .ul-sidebar .close-it>a {
     display: flex;
     justify-content: space-between;
@@ -136,25 +147,26 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     color: #545454;
-    text-decoration: none !important;
-}
-
-.sidebar-menu .sidebar .ul-sidebar .close-it .fafaicon {
-    font-size: 20px;
+    text-decoration: none;
+    padding-inline-start: 0px;
 }
 
 .fafaicon>img {
     width: 30px;
     height: 30px;
-
 }
 
+.main-content {
+    display: flex;
+    flex-grow: 0; 
+    margin-left: 88px; 
+    transition: margin-left 0.6s ease;
+}
 
-
-
-
-
-
+.main-content.sidebar-expanded {
+    flex-grow: 1;
+    margin-left: 250px;
+}
 
 
 /*===============================HEADER-----------------------------------------------------*/
@@ -164,7 +176,6 @@ header {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
-
 }
 
 .left-header {
@@ -180,7 +191,7 @@ h1 {
 }
 
 /*===============================BREADCRUMBS-----------------------------------------------------*/
-
+a:link,
 a:visited,
 a:active {
     color: black;
@@ -323,3 +334,7 @@ p {
 }
 
 /*===============================FOOTER-----------------------------------------------------*/
+
+footer {
+    margin-top: auto;
+}
