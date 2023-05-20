@@ -312,14 +312,120 @@ p {
 
 /*===============================MAIN-----------------------------------------------------*/
 
+.top-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 60px;
+    ;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.has-search .form-control-feedback {
+    margin-left: 20px;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.add {
+
+    justify-content: center;
+    align-self: center;
+    background-color: transparent;
+    border: none;
+}
+
+.add:hover {
+    border-radius: 30%;
+    background-color: #232323;
+
+}
+
+.add-icon {
+    background-image: url('/images/addperson.png');
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+}
+
+.add-icon:hover {
+    background-repeat: no-repeat;
+    background-image: url('/images/addwhite.png');
+}
+
+@media only screen and (max-width:480px) {
+    .top-part {
+        flex-direction: column-reverse;
+    }
+
+    .add-icon {
+        float: right;
+    }
+}
+
+
 /*===============================TABLE-----------------------------------------------------*/
 .table-list {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 80%
+}
+
+h2 {
+    font-family: 'lato', sans-serif;
+    margin-left: 20%;
+    font-size: 28px;
 }
 
 .clickable-row {
     cursor: pointer;
 }
+
+.table {
+    width: 80%;
+    margin-left: auto;
+}
+
+button {
+    display: flex;
+    font-family: 'lato', sans-serif;
+    font-size: 15px;
+    border-style: none;
+    float: right;
+}
+
+button:hover {
+    background-color: #232323;
+    color: white
+}
+
+
 
 /*===============================FOOTER-----------------------------------------------------*/
