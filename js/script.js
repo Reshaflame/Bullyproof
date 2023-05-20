@@ -41,3 +41,4 @@ var tableRow = document.getElementById('clickable-row');
 tableRow.addEventListener('click', function () {
     window.location.href = '#';
 });
+
