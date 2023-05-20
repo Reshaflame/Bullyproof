@@ -1,6 +1,7 @@
 $(".hamburger").click(function (e) {
     e.preventDefault();
-    $(".navbar").toggleClass("active");
+    $(".sidebar").toggleClass("expanded");
+    $(".main-content").toggleClass("sidebar-expanded");
 });
 
 $(document).ready(function ($) {
