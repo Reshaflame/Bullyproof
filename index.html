@@ -29,126 +29,119 @@
         <div class="bulliproof"></div>
         <div class="dror"></div>
     </header>
-    <div id="wrapper">
-        <section class="sidebar-menu">
-            <div class="sidebar">
-                <div class="hamburger">
-                    <h2 class="bar-text">MENU</h2>
-                    <div class="side-btn-hem">
-                        <i class="fa fa-bars"></i>
+    <div class="my-container">
+        <div id="wrapper">
+            <section class="sidebar-menu">
+                <div class="sidebar">
+                    <div class="hamburger">
+                        <h2 class="bar-text">MENU</h2>
+                        <div class="side-btn-hem">
+                            <i class="fa fa-bars"></i>
+                        </div>
+                    </div>
+                    <ul class="ul-sidebar">
+                        <li class="close-it">
+                            <a href="#"><span class="bar-text">Patients</span>
+                                <div class="fafaicon">
+                                    <img src="images/profileblack.png" alt="profile" target="profile" />
+                                </div>
+                            </a>
+                        </li>
+                        <li class="close-it">
+                            <a href="#"><span class="bar-text">Simulations</span>
+                                <div class="fafaicon">
+                                    <img src="images/simulationblack.png" alt="simulation" target="simulation" />
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="main-content">
+                <div class="headline">
+                    <div class="left-header">
+                        <h1 class="patients">Patients</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Patients</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Liam Golan</li>
+                            </ol>
+                        </nav>
+
+                    </div>
+                    <section class="profile">
+
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <p>Welcome, Meital</p>
+                                <img src="/images/meital.png" alt="meital" class="rounded-circle me-2">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="#">New project...</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div class="search"></div>
+                <div class="add"></div>
+                <div class="table-list">
+                    <div class="table-responsive-vertical shadow-z-1">
+                        <!-- Table starts here -->
+                        <table id="table" class="table table-hover table-mc-light-blue">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Last visit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">261020030</td>
+                                    <td data-title="Name">Liam Golan</td>
+                                    <td data-title="Status">21/01/2023 14:33:20</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">202020200</td>
+                                    <td data-title="Name">Tony Stark</td>
+                                    <td data-title="Status">21/01/2023 12:31:20</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">029051970</td>
+                                    <td data-title="Name">Bruce Wayne</td>
+                                    <td data-title="Status">21/01/2023 10:30:01</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">080619950</td>
+                                    <td data-title="Name">Material Design Sidebar</td>
+                                    <td data-title="Status">Completed</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">5</td>
+                                    <td data-title="Name">Material Design Tiles</td>
+                                    <td data-title="Status">Completed</td>
+                                </tr>
+                                <tr class="clickable-row">
+                                    <td data-title="ID">6</td>
+                                    <td data-title="Name">Material Design Typography</td>
+                                    <td data-title="Status">Completed</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <ul class="ul-sidebar">
-                    <li class="close-it">
-                        <a href="#"><span class="bar-text">Patients</span>
-                            <div class="fafaicon">
-                                <img src="/images/profileblack.png" alt="profile" target="profile" />
-                            </div>
-                        </a>
-                    </li>
-                    <li class="close-it">
-                        <a href="#"><span class="bar-text">Simulations</span>
-                            <div class="fafaicon">
-                                <img src="/images/simulationblack.png" alt="simulation" target="simulation" />
-                            </div>
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-
-        <section class="main-content">
-            <div class="headline">
-                <div class="left-header">
-                    <h1 class="patients">Patients</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Patients</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Liam Golan</li>
-                        </ol>
-                    </nav>
-
-                </div>
-                <section class="profile">
-
-                    <div class="dropdown">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <p>Welcome, Meital</p>
-                            <img src="/images/meital.png" alt="meital" class="rounded-circle me-2">
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
-                    </div>
-            </div>
-
-
-
-
-
-
-            <div class="search"></div>
-            <div class="add"></div>
-            <div class="table-list">
-                <div class="table-responsive-vertical shadow-z-1">
-                    <!-- Table starts here -->
-                    <table id="table" class="table table-hover table-mc-light-blue">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Last visit</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="clickable-row">
-                                <td data-title="ID">261020030</td>
-                                <td data-title="Name">Liam Golan</td>
-                                <td data-title="Status">21/01/2023 14:33:20</td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td data-title="ID">202020200</td>
-                                <td data-title="Name">Tony Stark</td>
-                                <td data-title="Status">21/01/2023 12:31:20</td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td data-title="ID">029051970</td>
-                                <td data-title="Name">Bruce Wayne</td>
-                                <td data-title="Status">21/01/2023 10:30:01</td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td data-title="ID">080619950</td>
-                                <td data-title="Name">Material Design Sidebar</td>
-                                <td data-title="Status">Completed</td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td data-title="ID">5</td>
-                                <td data-title="Name">Material Design Tiles</td>
-                                <td data-title="Status">Completed</td>
-                            </tr>
-                            <tr class="clickable-row">
-                                <td data-title="ID">6</td>
-                                <td data-title="Name">Material Design Typography</td>
-                                <td data-title="Status">Completed</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-
-        </section>
-        <footer></footer>
+            </section>
+    <footer></footer>
 
 </body>
 
