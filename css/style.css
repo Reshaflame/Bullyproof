@@ -43,25 +43,44 @@ header {
     margin-left: -300px;
 }
 
-.sidebar-menu {
-    width: 300px;
 
+
+.main-content {
+    margin-left: 88px;
+    transition: margin-left 0.6s ease;
 }
 
-
+.main-content.sidebar-expanded {
+    margin-left: 290px;
+}
 
 .sidebar-menu .sidebar {
     position: fixed;
-    width: 290px;
+    width: 88px;
     height: 100%;
     background-color: #fff;
     border-right: 1px solid #ccc;
-    left: -202px;
+    transition: width 0.6s ease;
+}
+
+.bar-text {
+    display: none;
+    transition: display 0.6s ease;
+}
+
+.sidebar.expanded .bar-text {
+    display: inline;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar-menu .sidebar:hover {
     transition: 0.6s all ease-in-out;
     left: 0;
+}
+
+.sidebar-menu .sidebar.expanded {
+    width: 290px;
 }
 
 .sidebar-menu .sidebar .hamburger {
@@ -110,8 +129,6 @@ header {
 .sidebar-menu .sidebar .ul-sidebar .close-it:hover a {
     color: #000;
 }
-
-.sidebar-menu .sidebar .ul-sidebar .close-it:hover .fafaicon {}
 
 .sidebar-menu .sidebar .ul-sidebar .close-it>a {
     display: flex;
